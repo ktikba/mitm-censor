@@ -10,5 +10,5 @@ file useful, since it provides instructions for setting the project up as a deve
 
 # Contributing
 
-If you would like to work on mitm-censor, or just see how it works, we recommend reading [CONTRIBUTING.md](CONTRIBUTING) which
+If you would like to work on mitm-censor, or just see how it works, we recommend reading [CONTRIBUTING.md](CONTRIBUTING.md) which
 contains instructions for setting up and running mitm-censor.
