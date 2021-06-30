@@ -58,3 +58,31 @@ Last, but not least, you'll want to configure your proxy settings to point to mi
 default, mitmproxy runs on port `8080`, so you'll want to point your local computer to `127.0.0.1:8080` or
 your test device to whatever your internal IP is.
 
+### Windows proxy settings
+
+* Open Settings
+* Go to Network and Internet
+* Click on Proxy on the left sidebar
+* At the bottom, you can enable proxy settings and specify the proxy server's IP address and port
+
+### macOS proxy settings
+
+* Open System Preferences
+* Go to Network
+* Click on your network connection method (Ethernet, Wi-Fi, etc.) and click Settings
+* Go to the Proxies tab
+* You can specify the proxy server's IP address and port here
+
+### Other devices
+
+Almost any device with proxy settings is supported. You can find instructions online for iOS, Android, etc. Google is your friend. :)
+
+## Trust mitmproxy's certificate
+
+Once you're connected to the proxy server, you won't be able to access the internet right away. However, you'll know it's working if you point your device's browser to http://mitm.it. This page will only work for you if you're connected to the proxy, and contains instructions for finishing your device setup. Download the certificate for your device's operating system, and follow the instructions carefully. You may need to close and re-open your browser after following the instructions to be able to access the internet again.
+
+Once you've successfully added mitmproxy's certificate to your system, you'll be able to access the internet, and you're successfully running mitm-censor!
+
+## Configuration
+
+The heart of mitm-censor is in a single Python file in `scripts/mitm-censor.py`. Near the top of this file is a `config` object which lets you change the behavior of mitm-censor. Each config option is documented with comments. If you make changes to this script and save it, the script will be reloaded automatically by the mitmproxy instance.
