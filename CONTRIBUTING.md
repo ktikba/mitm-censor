@@ -31,9 +31,16 @@ python -m venv venv
 
 Once created, you activate the virtualenv...
 
+... on Windows...
 ```shell
 # When activated, your shell prompt should be prefixed with `(venv)`.
 venv/Scripts/activate
+```
+
+... or on Linux/Unix/Mac...
+```shell
+# When activated, your shell prompt should be prefixed with `(venv)`.
+source venv/bin/activate
 ```
 
 Install required dependencies using `pip`...
