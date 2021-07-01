@@ -12,6 +12,7 @@ guide as well!
 
   You can see which version of python you have installed using `python --version`. You can install 
   the latest version of python from [the website](https://python.org), or using a third party tool like [homebrew](https://brew.sh/).
+  Note that on some systems, python 3 is accessible via the command `python3` instead.
 
 ## Environment setup
 
